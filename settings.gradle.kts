@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Camerax.Android"
-include ':app'
+include(":app", ":domain")
