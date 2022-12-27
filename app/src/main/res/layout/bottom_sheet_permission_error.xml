@@ -30,7 +30,7 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_permissions_allow"
-                style="@style/BaseOriginalOrangeButtom"
+                style="@style/BaseStyleButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
