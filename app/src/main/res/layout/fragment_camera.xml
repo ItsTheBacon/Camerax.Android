@@ -46,6 +46,32 @@
         app:strokeWidth="2dp" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_camera_switch_outside"
+        android:layout_width="50dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@android:color/transparent"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_camera_outside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_camera_outside"
+        app:layout_constraintTop_toTopOf="@id/button_camera_outside"
+        app:strokeColor="@color/devil_blue"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_camera_switch_inside"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/icon_camera_switch"
+        app:cornerRadius="100dp"
+        app:layout_constraintBottom_toBottomOf="@id/button_camera_switch_outside"
+        app:layout_constraintLeft_toLeftOf="@id/button_camera_switch_outside"
+        app:layout_constraintRight_toRightOf="@id/button_camera_switch_outside"
+        app:layout_constraintTop_toTopOf="@id/button_camera_switch_outside"
+        app:strokeColor="@color/devil_blue"
+        app:strokeWidth="2dp" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_reshoot"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
