@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera_graph"
+    app:startDestination="@id/cameraFragment">
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.bacon.camerax.android.presentation.ui.fragments.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_permissionErrorBottomSheet"
+            app:destination="@id/permissionErrorBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/permissionErrorBottomSheet"
+        android:name="com.bacon.camerax.android.presentation.ui.fragments.bottomsheets.permissions.PermissionErrorBottomSheet"
+        android:label="bottom_sheet_permission_error"
+        tools:layout="@layout/bottom_sheet_permission_error" >
+        <argument
+            android:name="title"
+            app:argType="reference" />
+    </dialog>
+
+
+</navigation>

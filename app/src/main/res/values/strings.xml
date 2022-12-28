@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CameraX</string>
+    <string name="text_allow">Разрешить</string>
+    <string name="text_reject">Отклонить</string>
+    <string name="text_permission_camera">Разрешите приложению CameraX доступ к камере</string>
+    <string name="text_continue">Продолжить</string>
+    <string name="text_reshoot">Переснять</string>
 </resources>

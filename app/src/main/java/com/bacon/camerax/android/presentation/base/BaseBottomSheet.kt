@@ -42,7 +42,11 @@ abstract class BaseBottomSheet<Binding : ViewBinding>(
         super.onViewCreated(view, savedInstanceState)
 
         initialize()
+        setupArgs()
         setupListeners()
+    }
+
+    protected open fun setupArgs() {
     }
 
     protected open fun initialize() {
