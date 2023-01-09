@@ -148,7 +148,9 @@ class CameraFragment : BaseFragment<CameraViewModel, FragmentCameraBinding>(
                 it.setSurfaceProvider(binding.cameraPreview.surfaceProvider)
             }
 
-            imageCapture = ImageCapture.Builder().build()
+            imageCapture =
+                ImageCapture.Builder().setCaptureMode(ImageCapture.CAPTURE_MODE_MINIMIZE_LATENCY)
+                    .build()
 
             if (cameraSelector == null) {
                 this.cameraSelector = if (isFrontal) {
@@ -224,6 +226,8 @@ class CameraFragment : BaseFragment<CameraViewModel, FragmentCameraBinding>(
         cameraPreview.isVisible = isVisible
         buttonCameraInside.isVisible = isVisible
         buttonCameraOutside.isVisible = isVisible
+        buttonCameraSwitchOutside.isVisible = isVisible
+        buttonCameraSwitchInside.isVisible = isVisible
     }
 
     override fun onDestroy() {
